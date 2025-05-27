@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Literacy Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Financial Literacy Quiz</h1>
+            <p>Test your knowledge of finance and investment basics</p>
+        </header>
+
+        <form id="quiz-form">
+            <div class="question">
+                <h3>1. What is a stock?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q1" value="a">
+                        A type of bond issued by the government
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="b">
+                        A loan given to a company
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="c">
+                        Partial ownership in a company
+                    </label>
+                    <label>
+                        <input type="radio" name="q1" value="d">
+                        A fixed-income investment
+                    </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>2. What does 'ROI' stand for?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q2" value="a">
+                        Return On Investment
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="b">
+                        Rate Of Interest
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="c">
+                        Risk Of Inflation
+                    </label>
+                    <label>
+                        <input type="radio" name="q2" value="d">
+                        Revenue Over Income
+                    </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>3. What is a 'bull market'?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q3" value="a">
+                        A market where prices are falling
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="b">
+                        A market where prices are rising
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="c">
+                        A market with high volatility
+                    </label>
+                    <label>
+                        <input type="radio" name="q3" value="d">
+                        A market that trades agricultural products
+                    </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>4. What is diversification?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q4" value="a">
+                        Investing in only one industry
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="b">
+                        Spreading investments across various assets
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="c">
+                        Increasing the risk of your portfolio
+                    </label>
+                    <label>
+                        <input type="radio" name="q4" value="d">
+                        Selling all your investments at once
+                    </label>
+                </div>
+            </div>
+
+            <div class="question">
+                <h3>5. What is a dividend?</h3>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q5" value="a">
+                        A fee paid to brokers
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="b">
+                        A portion of company profits paid to shareholders
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="c">
+                        A type of stock option
+                    </label>
+                    <label>
+                        <input type="radio" name="q5" value="d">
+                        The total value of a company's shares
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Quiz</button>
+        </form>
+
+        <div id="results" class="hidden">
+            <h2>Quiz Results</h2>
+            <p>Your score: <span id="score">0</span> out of 5</p>
+            <button onclick="location.reload()" class="retry-btn">Try Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

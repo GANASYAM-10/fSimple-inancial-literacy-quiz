@@ -1,0 +1,113 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: #111827;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #a855f7;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    color: #9ca3af;
+}
+
+/* Question styles */
+.question {
+    background: #1f2937;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.question h3 {
+    color: #e5e7eb;
+    margin-bottom: 1rem;
+}
+
+.options {
+    display: grid;
+    gap: 0.75rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    background: #374151;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+label:hover {
+    background: #4b5563;
+}
+
+input[type="radio"] {
+    margin-right: 1rem;
+}
+
+/* Button styles */
+.submit-btn, .retry-btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 2rem;
+}
+
+.submit-btn:hover, .retry-btn:hover {
+    background: #9333ea;
+}
+
+/* Results styles */
+#results {
+    background: #1f2937;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#results h2 {
+    color: #a855f7;
+    margin-bottom: 1rem;
+}
+
+#results p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
